@@ -6,4 +6,5 @@ fs.readFile("./readme.txt", (err, data) => {
     throw err;
   }
   console.log(data);
+  console.log(data.toString());
 });
