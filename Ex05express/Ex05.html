@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        margin: 30px;
+        width: 200px;
+      }
+      .input {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        margin-bottom: 4px;
+        font-size: 18px;
+        padding: 2px 2px 0px;
+      }
+      input[type="submit"] {
+        width: 225px;
+        background: none;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06),
+          0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://localhost:8888/get" method="get">
+      ID :
+      <input autocomplete="off" class="input" type="text" name="id" /><br />
+      PW :
+      <input autocomplete="off" class="input" type="password" name="pw" /><br />
+      <input type="submit" value="GET" />
+    </form>
+    <form action="http://localhost:8888/post" method="post">
+      ID :
+      <input autocomplete="off" class="input" type="text" name="id" /><br />
+      PW :
+      <input autocomplete="off" class="input" type="password" name="pw" /><br />
+      <input type="submit" value="POST" />
+    </form>
+  </body>
+</html>

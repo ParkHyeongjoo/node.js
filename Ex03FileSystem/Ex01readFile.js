@@ -5,6 +5,6 @@ fs.readFile("./readme.txt", (err, data) => {
     // 에러 발생시 예외처리
     throw err;
   }
-  console.log(data);
-  console.log(data.toString());
+  console.log("data : ", data);
+  console.log("toString : ", data.toString());
 });
