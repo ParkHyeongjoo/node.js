@@ -1,7 +1,7 @@
 // App.js : node module 로딩, 초기화, router 유입점
 
 const express = require("express");
-const indexRouter = require("./routes/index");
+const indexRouter = require("./routes"); // index.js는 생략가능
 const userRouter = require("./routes/user");
 const app = express();
 
